@@ -1,0 +1,23 @@
+*******************************************************************************
+Your application uses this file to locate resource strings defined
+in Web.Sitemap project item. 
+
+Replace the text between localization brackets as needed.
+*******************************************************************************
+
+^HomeDesc^Uygulama ana sayfası^HomeDesc^
+
+^HomePath^Ev^HomePath^
+
+^LocationsDesc^ ^LocationsDesc^
+
+^LocationsPath^Locations^LocationsPath^
+
+^MembershipDesc^Kullanıcı ve rol yöneticisi^MembershipDesc^
+
+^MembershipPath^Üyelik^MembershipPath^
+
+^ReportsPath^Raporlar^ReportsPath^
+
+^SiteHome^Ev^SiteHome^
+

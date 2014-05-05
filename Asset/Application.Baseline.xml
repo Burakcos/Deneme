@@ -1,0 +1,299 @@
+<application snapshot="false" xmlns="urn:schemas-codeontime-com:data-aquarium-application" xmlns:m="urn:codeontime:data-map">
+  <pages xmlns="urn:schemas-codeontime-com:data-aquarium-application">
+    <page name="Home" title="^HomeTitle^Start^HomeTitle^" description="^HomeDesc^Application home page^HomeDesc^" path="^HomePath^Home^HomePath^" style="HomePage" customStyle="Wide" index="1000">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewColumn" />
+      </containers>
+      <controls>
+        <control id="control1" name="TableOfContents" container="container1" />
+        <control id="control2" name="Welcome" container="container2" />
+      </controls>
+    </page>
+    <page name="Address" title="Address" description="View Address" index="1010" path="Address">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewRow" style="padding-top:8px" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Address" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" searchOnStart="true" />
+        <dataView id="view2" controller="Locations" view="grid1" text="Locations" filterSource="view1" container="container2" filterFields="AddressId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+        <dataView id="view3" controller="Customer" view="grid1" text="Customer" filterSource="view1" container="container2" filterFields="AddressId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+        <dataView id="view4" controller="Employee" view="grid1" text="Employee" filterSource="view1" container="container2" filterFields="AddressId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows address management.</about>
+    </page>
+    <page name="Locations" title="Locations" description="View Locations" index="1020" path="Address | Locations">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewRow" style="padding-top:8px" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Locations" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" searchOnStart="true" />
+        <dataView id="view2" controller="Locations" view="grid1" text="Locations" filterSource="view1" container="container2" filterFields="ParrentId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+        <dataView id="view3" controller="Customer" view="grid1" text="Customer" filterSource="view1" container="container2" filterFields="LocationsId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+        <dataView id="view4" controller="Employee" view="grid1" text="Employee" filterSource="view1" container="container2" filterFields="LocationsId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows locations management.</about>
+    </page>
+    <page name="Customer" title="Customer" description="View Customer" index="1030" path="Address | Customer">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewRow" style="padding-top:8px" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Customer" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" searchOnStart="true" />
+        <dataView id="view2" controller="Customer" view="grid1" text="Customer" filterSource="view1" container="container2" filterFields="ParrentId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows customer management.</about>
+    </page>
+    <page name="Employee" title="Employee" description="View Employee" index="1040" path="Address | Employee">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Employee" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows employee management.</about>
+    </page>
+    <page name="Department" title="Department" description="View Department" index="1050" path="Department">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewRow" style="padding-top:8px" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Department" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" searchOnStart="true" />
+        <dataView id="view2" controller="Department" view="grid1" text="Department" filterSource="view1" container="container2" filterFields="ParrentId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+        <dataView id="view3" controller="Employee" view="grid1" text="Employee" filterSource="view1" container="container2" filterFields="DepartmentId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows department management.</about>
+    </page>
+    <page name="AddressType" title="Address Type" description="View Address Type" index="1060" path="Address Type">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewRow" style="padding-top:8px" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="AddressType" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" searchOnStart="true" />
+        <dataView id="view2" controller="Address" view="grid1" text="Address" filterSource="view1" container="container2" filterFields="AddrressTypeId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows address type management.</about>
+    </page>
+    <page name="Product" title="Product" description="View Product" index="1070" path="Product">
+      <containers>
+        <container id="container1" flow="NewRow" />
+        <container id="container2" flow="NewRow" style="padding-top:8px" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Product" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" searchOnStart="true" />
+        <dataView id="view2" controller="Product" view="grid1" text="Product" filterSource="view1" container="container2" filterFields="ParrentId" activator="Tab" autoHide="Container" pageSize="5" multiSelect="true" showModalForms="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows product management.</about>
+    </page>
+    <page name="Currency" title="Currency" description="View Currency" index="1080" path="Currency">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Currency" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows currency management.</about>
+    </page>
+    <page name="Document" title="Document" description="View Document" index="1090" path="Currency | Document">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Document" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows document management.</about>
+    </page>
+    <page name="DocumentDetails" title="Document Details" description="View Document Details" index="1100" path="Currency | Document Details">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="DocumentDetails" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows document details management.</about>
+    </page>
+    <page name="DocumentType" title="Document Type" description="View Document Type" index="1110" path="Currency | Document Type">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="DocumentType" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows document type management.</about>
+    </page>
+    <page name="RecordProduct" title="Record Product" description="View Record Product" index="1120" path="Currency | Record Product">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="RecordProduct" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows record product management.</about>
+    </page>
+    <page name="TransferType" title="Transfer Type" description="View Transfer Type" index="1130" path="Currency | Transfer Type">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="TransferType" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows transfer type management.</about>
+    </page>
+    <page name="Translations" title="Translations" description="View Translations" index="1140" path="Currency | Translations">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <dataViews>
+        <dataView id="view1" controller="Translations" view="grid1" showInSummary="true" container="container1" activator="None" text="" multiSelect="true" showModalForms="true" searchOnStart="true" />
+      </dataViews>
+      <controls />
+      <about>This page allows translations management.</about>
+    </page>
+    <page name="Membership" title="^MembershipTitle^Membership Manager^MembershipTitle^" description="^MembershipDesc^User and role manager^MembershipDesc^" roles="Administrators" path="^MembershipPath^Membership^MembershipPath^" style="UsersPage" index="1150">
+      <containers>
+        <container id="container1" flow="NewRow" />
+      </containers>
+      <about>^MembershipAbout^This page allows to manage roles and users.^MembershipAbout^</about>
+      <controls>
+        <control id="control1" name="MembershipManager" container="container1" />
+      </controls>
+    </page>
+  </pages>
+  <userControls>
+    <userControl name="TableOfContents" prefix="uc" generate="Always">
+      <body>
+            
+&lt;div class="ParaInfo"&gt;
+        ^TocInstruction^Please select a page link in the table of contents below.^TocInstruction^&lt;/div&gt;
+&lt;div class="ParaHeader"&gt;
+    ^TocHeader^Site Map^TocHeader^
+&lt;/div&gt;
+&lt;asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" /&gt;
+&lt;asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" CssClass="TreeView"&gt;
+&lt;/asp:TreeView&gt;
+
+&lt;div id="app-sitemap" data-app-role="page" data-theme="a" 
+            
+              data-app-toolbar="false"
+             data-activator="Button|^TocHeader^Site Map^TocHeader^"&gt;
+
+            
+              
+  &lt;div data-role="header" data-position="fixed" class="ui-shadow"&gt;
+      &lt;a href="#app-back" data-role="button" data-iconpos="notext" data-icon="back"&gt;&lt;/a&gt;
+      &lt;h1&gt;^TocHeader^Site Map^TocHeader^&lt;/h1&gt;
+      &lt;a href="#app-context" data-role="button" data-iconpos="notext" data-icon="bars" class="ui-btn-right app-btn-context" &gt;&lt;/a&gt;
+  &lt;/div&gt;
+            
+            
+  &lt;div data-role="content"&gt;
+    &lt;p&gt;
+      &lt;span&gt;^TocInstruction^Please select a page link in the table of contents below.^TocInstruction^&lt;/span&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+    &lt;/p&gt;
+    &lt;div data-app-role="sitemap"&gt;&lt;/div&gt;
+    &lt;p&gt;
+      &lt;br /&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </body>
+    </userControl>
+    <userControl name="Welcome" prefix="uc" generate="Always">
+      <body>
+                
+&lt;div style="padding-left:8px"&gt;&lt;div class="ParaInfo"&gt;
+        ^SignInInstruction^Sign in to access the protected site content.^SignInInstruction^&lt;/div&gt;
+&lt;div class="ParaHeader"&gt;
+    ^SignInHeader^Instructions^SignInHeader^
+&lt;/div&gt;
+&lt;div class="ParaText"&gt;
+    ^SignInPara1^Two standard user accounts are automatically created when application is initialized
+    if membership option has been selected for this application.^SignInPara1^
+&lt;/div&gt;
+                  
+&lt;div class="ParaText"&gt;
+    ^SignInPara2^The administrative account &lt;b&gt;admin&lt;/b&gt; is authorized to access all areas of the
+    web site and membership manager. The standard &lt;b&gt;user&lt;/b&gt; account is allowed to
+    access all areas of the web site with the exception of membership manager.^SignInPara2^&lt;/div&gt;
+                
+                  
+&lt;div class="ParaText"&gt;
+    ^SignInPara3^Move the mouse pointer over the link &lt;i&gt;Login to this web site&lt;/i&gt; on the right-hand side
+    at the top of the page and sign in with one of the accounts listed below.^SignInPara3^&lt;/div&gt;
+                
+&lt;div class="ParaText"&gt;
+    &lt;div style="border: solid 1px black; background-color: InfoBackground; padding: 8px;
+        float: left;"&gt;
+        ^AdminDesc^Administrative account^AdminDesc^:&lt;br /&gt;
+        &lt;b title="User Name"&gt;admin&lt;/b&gt; / &lt;b title="Password"&gt;admin123%&lt;/b&gt;
+        &lt;br /&gt;
+        &lt;br /&gt;
+        ^UserDesc^Standard user account^UserDesc^:&lt;br /&gt;
+        &lt;b title="User Name"&gt;user&lt;/b&gt; / &lt;b title="Password"&gt;user123%&lt;/b&gt;
+    &lt;/div&gt;
+    &lt;div style="clear:both;margin-bottom:8px"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="app-welcome" data-app-role="page" data-theme="a" data-app-toolbar="false" data-activator="Button|^SignInHeader^Instructions^SignInHeader^" data-activator-description="^SignInInstruction^Sign in to access the protected site content.^SignInInstruction^"&gt;
+    &lt;div data-role="header" data-position="fixed" class="ui-shadow"&gt;
+        &lt;a href="#app-back" data-role="button" data-iconpos="notext" data-icon="back"&gt;&lt;/a&gt;
+        &lt;h1&gt;^TocHeader^Site Map^TocHeader^&lt;/h1&gt;
+        &lt;a href="#app-context" data-role="button" data-iconpos="notext" data-icon="bars" class="ui-btn-right app-btn-context" &gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div data-role="content"&gt;
+        &lt;p&gt;^SignInInstruction^Sign in to access the protected site content.^SignInInstruction^&lt;/p&gt;
+        &lt;p&gt;
+            ^SignInPara1^Two standard user accounts are automatically created when application is initialized
+    if membership option has been selected for this application.^SignInPara1^
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            ^SignInPara2^The administrative account &lt;b&gt;admin&lt;/b&gt; is authorized to access all areas of the
+    web site and membership manager. The standard &lt;b&gt;user&lt;/b&gt; account is allowed to
+    access all areas of the web site with the exception of membership manager.^SignInPara2^
+        &lt;/p&gt;
+        &lt;p&gt;
+            ^AdminDesc^Administrative account^AdminDesc^:&lt;br /&gt;
+            &lt;b title="User Name"&gt;admin&lt;/b&gt; / &lt;b title="Password"&gt;admin123%&lt;/b&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            ^UserDesc^Standard user account^UserDesc^:&lt;br /&gt;
+            &lt;b title="User Name"&gt;user&lt;/b&gt; / &lt;b title="Password"&gt;user123%&lt;/b&gt;
+        &lt;/p&gt;
+        &lt;p&gt;&lt;a href="#" data-role="button" data-inline="true" data-theme="b" data-app-role="loginstatus" data-icon="lock"&gt;Login Status&lt;/a&gt;&lt;/p&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+              </body>
+    </userControl>
+    <userControl name="MembershipManager" prefix="uc" generate="Always">
+      <body>
+              
+&lt;aquarium:MembershipManager ID="mm" runat="server" /&gt;
+            </body>
+    </userControl>
+  </userControls>
+</application>

@@ -1,0 +1,642 @@
+﻿.ui-header.ui-shadow {
+    border-bottom-color: #ccc !important;
+}
+
+body {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+}
+
+.ui-panel.ui-panel-open {
+    position: fixed;
+}
+
+.ui-panel-inner {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+li.app-info {
+    border-right-color: #1f1f1f !important;
+    border-right-width: 1px !important;
+    white-space: normal;
+}
+
+    li.app-info p {
+        white-space: normal;
+    }
+
+.app-site-map li.depth2 a {
+    padding-left: 2.5em;
+}
+
+.app-site-map li.depth3 a {
+    padding-left: 5em;
+}
+
+.app-site-map li.depth4 a {
+    padding-left: 7.5em;
+}
+
+.app-site-map li.depth5 a {
+    padding-left: 10em;
+}
+
+.ui-listview li .app-item-desc-divider {
+    padding: 0 .5em 0 0;
+    margin: 0 0 0 .5em;
+    border-left: solid 1px #c0c0c0;
+}
+
+
+.app-item-label {
+    padding-right: 8px;
+    color: #999999;
+}
+
+.ui-btn-active .app-item-label {
+    color: #fff;
+}
+
+
+.ui-panel-position-right .app-item-desc, #app-sidebar-right .app-item-desc {
+    color: #999999;
+    margin: 0;
+}
+
+.ui-panel-position-right .ui-btn-active .app-item-desc, #app-sidebar-right .ui-btn-active .app-item-desc {
+    color: #fff;
+}
+
+.ui-listview > .ui-li-divider.app-list-instruction {
+    color: #999999;
+    font-weight: normal;
+    white-space: normal;
+}
+
+.app-image-thumb {
+    border: 1px solid #c0c0c0;
+    border-width: 1px !important;
+    background-color: #fff;
+}
+
+.app-bar-tools {
+    border-bottom-color: #ccc;
+}
+
+.app-bar {
+    border-top: solid 1px #ddd;
+    margin: 0;
+}
+
+    .app-bar a.ui-btn {
+        background-color: rgb(241, 241, 241);
+        margin: 0 0%;
+        text-align: left;
+        border-width: 0;
+        font-weight: normal;
+        padding-left: 3em;
+        color: #808080;
+        display: block;
+    }
+
+.app-bar-filter a.ui-btn {
+    white-space: normal;
+}
+
+.app-bar .ui-btn-icon-left:after {
+    left: 0.75em;
+}
+
+.app-btn-cluster-right a.ui-btn:nth-child(5) {
+    margin-right: 2.6em;
+}
+
+.app-btn-cluster-right a.ui-btn:nth-child(4) {
+    margin-right: 5.35em;
+}
+
+
+.app-btn-cluster-right a.ui-btn:nth-child(3) {
+    margin-right: 8.10em;
+}
+
+.app-btn-cluster-right a.ui-btn:nth-child(2) {
+    margin-right: 10.85em;
+}
+
+.app-btn-cluster-right a.ui-btn:nth-child(1) {
+    margin-right: 13.6em;
+}
+
+.app-btn-cluster-right .app-btn {
+    display: none;
+}
+
+
+.app-bar-heading {
+    border-top: solid 1px #ddd;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    font-size: 14px;
+    color: #808080;
+    padding: 0.45em 0.25em 0.45em 1.1em;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 1;
+}
+
+    .app-bar-heading .app-bar-label {
+        float: right;
+        margin: -.5em .5em 0 0;
+        font-size: .75em;
+        color: #000;
+        max-width: 40%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+.app-bar-info .app-bar-label {
+    float: right;
+    margin: -.7em -.25em 0 0;
+    font-size: .85em;
+    color: #000;
+    z-index: 1;
+    max-width: 40%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.app-bar-info .ui-btn-active .app-bar-label {
+    color: #fff;
+}
+
+.app-bar-search {
+    padding: 0 3em 0 .5em;
+    margin-top: -0.176em;
+}
+
+    .app-bar-search .ui-input-search {
+    }
+
+    .app-bar-search .ui-btn-right {
+        right: 0.56em;
+    }
+
+.ui-btn-right.app-btn {
+    right: 0.56em;
+}
+
+.dv-load-at-bottom:after, .dv-load-at-top:after {
+    background-image: url(images/ajax-loader.gif);
+    background-size: 100%;
+    filter: Alpha(Opacity=35);
+    opacity: .35;
+}
+
+.app-static-text {
+    border-color: transparent !important;
+}
+
+.app-static-label {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px !important;
+}
+
+.app-static-text div {
+    font-size: 14px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.45em 0.4em;
+    color: #808080;
+}
+
+.app-form-page .ui-content {
+    padding-top: 0;
+}
+
+    .app-form-page .ui-content .ui-collapsible-set {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .app-form-page .ui-content .ui-collapsible-inset {
+        margin-top: 0.5em;
+    }
+
+.app-popup {
+    min-width: 280px;
+    max-width: 500px;
+}
+
+.app-popup-alert pre {
+    padding: 0.5em;
+    max-height: 300px;
+    overflow: auto;
+    max-width: 480px;
+    border: 1px solid #CCCCCC;
+}
+
+.app-popup-message {
+    background-color: #fff;
+    border: 1px solid #CCCCCC;
+    z-index: 1002;
+}
+
+.app-status-bar {
+    background-color: #fff;
+    padding: 0;
+    white-space: nowrap;
+    margin: 0.25em -0.75em;
+    overflow-x: hidden;
+}
+
+    .app-status-bar ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .app-status-bar .Segment, .app-status-bar span {
+        background: url(../App_Themes/_Shared/StatusBar.png) repeat-x;
+        vertical-align: middle;
+        font-size: 12px;
+    }
+
+
+    .app-status-bar .Segment {
+        text-overflow: ellipsis;
+        display: inline-block;
+        list-style-type: none;
+        background-position: right -59px;
+        padding-right: 15px;
+    }
+
+    .app-status-bar .Outer {
+        background-image: none;
+    }
+
+    .app-status-bar .Segment span {
+        display: inline-block;
+        text-shadow: none;
+    }
+
+    .app-status-bar .Segment.Future {
+        background-position: right -179px;
+    }
+
+        .app-status-bar .Segment.Future.Last {
+            background-position: right -269px;
+        }
+
+    .app-status-bar .Segment.Past.Last {
+        background-position: right -209px;
+    }
+
+    .app-status-bar .Segment.Current.Last {
+        background-position: right -239px;
+    }
+
+    .app-status-bar .Segment.CurrentToFuture {
+        background-position: right -149px;
+    }
+
+    .app-status-bar .Segment.PastToCurrent {
+        background-position: right -89px;
+    }
+
+    .app-status-bar .Segment.CurrentToCurrent {
+        background-position: right -419px;
+    }
+
+    .app-status-bar .Segment span.Self {
+        height: 18px;
+        background-repeat: repeat-x;
+        background-position: 0 -299px;
+        vertical-align: middle;
+        padding: 6px 4px 5px 4px;
+    }
+
+    .app-status-bar .Segment.Current span.Self {
+        font-weight: bold;
+        background-position: 0 -329px;
+    }
+
+    .app-status-bar .Segment.Future span.Self {
+        background-position: 0 -359px;
+    }
+
+    .app-status-bar .Segment.First span.Self {
+        margin-left: 8px;
+        padding-left: 0;
+    }
+
+    .app-status-bar .Segment.First span.Inner {
+        background-position: left -29px;
+    }
+
+    .app-status-bar .Segment.Current.First span.Inner {
+        background-position: left 1px;
+    }
+
+    .app-status-bar .Segment.Future.First span.Inner {
+        background-position: left -389px;
+    }
+
+
+div.app-menu-footer {
+    height: 3em;
+    margin: 1em -1em 0 -1em;
+}
+
+.app-sidebar-right {
+    display: none;
+    top: 0px;
+}
+
+.ui-btn-right.app-btn-context {
+    right: 0.56em;
+}
+
+.ui-listview textarea {
+    white-space: normal;
+}
+
+@media (min-width: 40em) {
+
+    .ui-field-contain > label,
+    .ui-field-contain .ui-controlgroup-label,
+    .ui-field-contain > .ui-rangeslider > label {
+        width: 30%;
+    }
+
+        .ui-field-contain > label + [class*="ui-"],
+        .ui-field-contain .ui-controlgroup-controls {
+            float: left;
+            width: 68%;
+        }
+
+    body:not(.app-sidebar-undocked) .app-btn-cluster-right a.ui-btn:nth-child(1) {
+        margin-right: 11.5em;
+    }
+
+    body:not(.app-sidebar-undocked) .app-btn-cluster-right a.ui-btn:nth-child(2) {
+        margin-right: 8.75em;
+    }
+
+    body:not(.app-sidebar-undocked) .app-btn-cluster-right a.ui-btn:nth-child(3) {
+        margin-right: 6em;
+    }
+
+    body:not(.app-sidebar-undocked) .app-btn-cluster-right a.ui-btn:nth-child(4) {
+        margin-right: 3.25em;
+    }
+
+    body:not(.app-sidebar-undocked) .app-btn-cluster-right a.ui-btn:nth-child(5) {
+        margin-right: 0.5em;
+    }
+
+    body:not(.app-sidebar-undocked) .app-bar-search {
+        padding-right: 3.75em;
+    }
+
+        body:not(.app-sidebar-undocked) .app-bar-search .ui-btn-right {
+            right: 1.4em;
+        }
+
+
+    body:not(.app-sidebar-undocked) .app-btn-context {
+        display: none;
+    }
+
+    body:not(.app-sidebar-undocked) .app-sidebar-right {
+        z-index: 1001;
+        display: block;
+        right: 0;
+        border-left: solid 1px #999;
+    }
+
+    body:not(.app-sidebar-undocked) .ui-header.ui-header-fixed,
+    body:not(.app-sidebar-undocked) .ui-footer.ui-footer-fixed {
+        width: auto;
+        right: 17em;
+    }
+
+    body:not(.app-sidebar-undocked) .app-bar-heading {
+        right: 19.431em;
+    }
+
+    body:not(.app-sidebar-undocked) .ui-page .ui-content {
+        margin-right: 17em;
+    }
+
+    body:not(.app-sidebar-undocked) .ui-page .ui-listview.app-listview {
+        margin-right: 17em;
+    }
+
+    .ui-btn-right.app-btn {
+        right: 0.85em;
+    }
+}
+
+@media (min-width: 40em) {
+
+
+    body.app-sidebar-undocked .app-listview {
+        -webkit-border-radius: .5em;
+        border-radius: .5em;
+    }
+
+        body.app-sidebar-undocked .app-listview li,
+        body.app-sidebar-undocked .app-listview li.ui-first-child,
+        body.app-sidebar-undocked .app-listview li.ui-last-child {
+            float: left;
+            width: 47%;
+            margin: 0.5em;
+            -webkit-border-radius: inherit;
+            border-radius: inherit;
+        }
+
+            body.app-sidebar-undocked .app-listview li .ui-btn {
+                -webkit-border-radius: inherit;
+                border-radius: inherit;
+                border-width: 1px !important;
+            }
+
+
+                body.app-sidebar-undocked .app-listview li .ui-btn .ui-li-thumb {
+                    margin-left: .5em;
+                }
+
+    /*body.app-sidebar-undocked .app-listview li.ui-li-divider {
+                width: 100%;
+            }*/
+
+    .app-listview li.ui-li-divider {
+        float: none!important;
+        width: 100%!important;
+        margin: 0!important;
+        -webkit-border-radius: 0!important;
+        border-radius: 0!important;
+    }
+}
+
+
+
+
+@media (min-width: 50em) {
+
+    body.app-sidebar-undocked .app-listview {
+        -webkit-border-radius: .5em;
+        border-radius: .5em;
+    }
+
+        body.app-sidebar-undocked .app-listview li,
+        body.app-sidebar-undocked .app-listview li.ui-first-child,
+        body.app-sidebar-undocked .app-listview li.ui-last-child {
+            float: left;
+            width: 47%;
+            margin: 0.5em;
+            -webkit-border-radius: inherit;
+            border-radius: inherit;
+        }
+
+            body.app-sidebar-undocked .app-listview li .ui-btn {
+                -webkit-border-radius: inherit;
+                border-radius: inherit;
+                border-width: 1px !important;
+            }
+
+                body.app-sidebar-undocked .app-listview li .ui-btn .ui-li-thumb {
+                    margin-left: .5em;
+                }
+}
+
+
+@media (min-width: 62em) {
+
+    .app-listview {
+        -webkit-border-radius: .5em;
+        border-radius: .5em;
+    }
+
+        .app-listview li, .app-listview li.ui-first-child, .app-listview li.ui-last-child {
+            float: left;
+            width: 47%;
+            margin: 0.5em;
+            -webkit-border-radius: inherit;
+            border-radius: inherit;
+        }
+
+            .app-listview li .ui-btn {
+                -webkit-border-radius: inherit;
+                border-radius: inherit;
+                border-width: 1px !important;
+            }
+
+                .app-listview li .ui-btn .ui-li-thumb {
+                    margin-left: .5em;
+                }
+
+    body.app-sidebar-undocked .app-listview li,
+    body.app-sidebar-undocked .app-listview li.ui-first-child,
+    body.app-sidebar-undocked .app-listview li.ui-last-child {
+        width: 31.25%;
+    }
+}
+
+@media (min-width: 85em) {
+    .app-listview li,
+    .app-listview li.ui-first-child,
+    .app-listview li.ui-last-child {
+        width: 31.5%;
+    }
+}
+
+/*
+.app-sidebar-right.app-active {
+	-webkit-box-shadow: -5px 0 5px rgba(0,0,0,.15);
+	-moz-box-shadow: -5px 0 5px rgba(0,0,0,.15);
+	box-shadow: -5px 0 5px rgba(0,0,0,.15);
+}
+    */
+
+.app-sidebar-right.app-inactive {
+    border-color: #ccc !important;
+}
+
+/* disable default hover-over background colors and shadows to speed up scrolling */
+
+body:not(.app-desktop) li a:hover, li a:visited {
+    background-color: #f6f6f6 !important;
+}
+
+body:not(.app-desktop) li a.ui-btn-active:hover, li a.ui-btn-active:visited {
+    background-color: #3388cc !important;
+}
+
+body:not(.app-desktop) li a.ui-btn-b:hover, li a.ui-btn-b:visited {
+    background-color: #333 !important;
+}
+
+body:not(.app-desktop) li a.ui-btn-active.ui-btn-b:hover, li a.ui-btn-active.ui-btn-b:visited {
+    background-color: #22aadd !important;
+}
+
+body:not(.app-desktop) ul li a:not(.app-lookup) {
+    text-shadow: none !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+
+.dataview-busy-indicator {
+    background-color: #007AFF;
+    height: 3px;
+}
+
+.app-lookup {
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+}
+
+    .app-lookup.ui-btn {
+        font-weight: normal;
+        margin-top: -2.15em;
+    }
+
+.app-lookup-input {
+    border-width: 0;
+    padding: .85em 0 0 1em;
+}
+
+    .app-lookup-input::-ms-clear {
+        display: none;
+    }
+
+    .app-lookup-input:focus {
+        outline: none;
+    }
+
+.app-transparent {
+    background-color: transparent !important;
+}
+
+ul.ui-listview.app-list-instruction {
+    margin: 0 -1em;
+}

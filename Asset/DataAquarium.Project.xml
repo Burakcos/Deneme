@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 
+  This file is provided to store the settings for your Data Aquarium project. 
+  You can safely delete this file if no further code generation is planned.
+--><project xmlns="urn:schemas-codeontime-com:data-aquarium-project" compatibility="20111118" subscriptionLevel="Unlimited" codeDomProvider="CSharp" targetFramework="4.5">
+  <connectionString hostDatabaseSharing="false">Data Source=.;Initial Catalog=Envanter;Persist Security Info=True;User ID=sa;Password=as;</connectionString>
+  <providerName>System.Data.SqlClient</providerName>
+  <namespace>AssetManagment</namespace>
+  <webServer run="true" port="46603"><webConfig></webConfig></webServer>
+  <features pageHeader="" copyright="" annotations="false" annotationsPath="" newColumn="true" floating="false" maxGridFields="10" multiSelect="true" batchEdit="true" advancedSearch="true" advancedLookup="true" relationshipExplorer="true" enablePermalinks="false" enableHistory="false" enableTransactions="false" showModalForms="true" tabViewSelection="7">
+    <navigation detectUnderscoreSeparatedSchema="true"/>
+    <blob allowUploadOnInsert="true"/>
+    <framework scriptOnly="true"/>
+  <grid actionColumn="true"/><ease urlHashing="true"><auditing>Modified By User Name = ModifiedBy|updated_by
+Modified By User ID      = ModifiedByUserId
+Modified On Date          = ModifiedOn|updated|update_date
+Created By User Name  = CreatedBy
+Created By User ID       = CreatedById|created_user_id
+Created On Date           = CreatedOn|create_date</auditing></ease><packageProperties></packageProperties></features>
+<host path="" url=""/><databaseObjectFilter></databaseObjectFilter><bll discoveryDepth="3" labelFormatExpression="" generate="true" selectMethod="Select" selectSingleMethod="SelectSingle" insertMethod="Insert" updateMethod="Update" deleteMethod="Delete" generateSharedBusinessRules="true" includeViews="true" tabViewSelection="5"><fieldMap></fieldMap><keys></keys><fieldsToIgnore></fieldsToIgnore><fieldsToHide></fieldsToHide><customLabels></customLabels></bll><reports enabled="true"/><membership enabled="true" providerName="System.Data.SqlClient" connectionString="Data Source=.;Initial Catalog=Envanter;Persist Security Info=True;User ID=sa;Password=as;" windowsAuthentication="false" activeDirectory="false" customSecurity="false" dedicatedLogin="false" displayRememberMe="true" rememberMeSet="true" displaySignUp="false" displayPasswordRecovery="false" displayMyAccount="false" displayHelp="true" idleUserDetectionTimeout="30" tabViewSelection="0" validationKey="AECE0C3D7A80618CC41B7DF01DA1EC746A800C09E5806FA452E91C2D44C6E4884A95C47DB58F5B979B4D3CB7A8125A4D93D298DCF74DA43C0299A3C9FAAC5408"><adConfig></adConfig><config></config></membership><globalization uiCulture="tr-TR" culture="en-US" enableClientBasedCulture="false" supportedCultures="en-US,tr-TR; tr-TR,en-US; " googleTranslateApiKey=""/><layout name="Classic" menuStyle="TwoLevel"/><theme name="Yoshi"/></project>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map>
+  <node name="Address" refs="3" depth="0" schema="dbo" label="Address" schemaLabel="Dbo">
+    <node name="Locations" refs="3" depth="1" schema="dbo" label="Locations" schemaLabel="Dbo" />
+    <node name="Customer" refs="1" depth="1" schema="dbo" label="Customer" schemaLabel="Dbo" />
+    <node name="Employee" refs="0" depth="1" schema="dbo" label="Employee" schemaLabel="Dbo" />
+  </node>
+  <node name="Department" refs="2" depth="0" schema="dbo" label="Department" schemaLabel="Dbo" />
+  <node name="AddressType" refs="1" depth="0" schema="dbo" label="Address Type" schemaLabel="Dbo" />
+  <node name="Product" refs="1" depth="0" schema="dbo" label="Product" schemaLabel="Dbo" />
+  <node name="Currency" refs="0" depth="0" schema="dbo" label="Currency" schemaLabel="Dbo" />
+  <node name="Document" refs="0" depth="0" schema="dbo" label="Document" schemaLabel="Dbo" />
+  <node name="DocumentDetails" refs="0" depth="0" schema="dbo" label="Document Details" schemaLabel="Dbo" />
+  <node name="DocumentType" refs="0" depth="0" schema="dbo" label="Document Type" schemaLabel="Dbo" />
+  <node name="RecordProduct" refs="0" depth="0" schema="dbo" label="Record Product" schemaLabel="Dbo" />
+  <node name="TransferType" refs="0" depth="0" schema="dbo" label="Transfer Type" schemaLabel="Dbo" />
+  <node name="Translations" refs="0" depth="0" schema="dbo" label="Translations" schemaLabel="Dbo" />
+</map>

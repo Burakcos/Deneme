@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" xmlns:app="urn:schemas-codeontime-com:data-aquarium-application">
+  <siteMapNode url="~/Default.aspx" title="^SiteHome^Home^SiteHome^" description="">
+    <siteMapNode title="^HomePath^Home^HomePath^" description="^HomeDesc^Application home page^HomeDesc^" url="~/Pages/Home.aspx" cssClass="Wide" />
+    <siteMapNode title="Hierarchy" description="" url="~/Pages/Hierarchy.aspx" roles="*" />
+    <siteMapNode title="Locations" description="" url="~/Pages/Locations.aspx" roles="*" />
+    <siteMapNode title="^MembershipPath^Membership^MembershipPath^" description="^MembershipDesc^User and role manager^MembershipDesc^" url="~/Pages/Membership.aspx" roles="Administrators" />
+    <siteMapNode title="Personel" description="" url="~/Pages/Personel.aspx" roles="*" />
+  </siteMapNode>
+</siteMap>
